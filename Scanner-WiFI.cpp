@@ -1,4 +1,4 @@
-// wifi_scan.cpp   (C++17, works on Debian/Ubuntu)
+
 #include <iostream>
 #include <iomanip>
 #include <string>
@@ -67,7 +67,7 @@ int main(int argc, char* argv[]) {
             if (!cur.mac.empty()) aps.push_back(cur);
             cur = AP{};
             istringstream iss(line);
-            string dummy; iss >> dummy >> cur.mac;     // BSS xx:xx:xx:xx:xx:xx
+            string dummy; iss >> dummy >> cur.mac;     
             continue;
         }
 
